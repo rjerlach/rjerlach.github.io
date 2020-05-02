@@ -1,0 +1,270 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  
+  h1 {
+    color: violet;
+    text-align: center;
+  }
+  
+  h2 {
+      text-align: center;
+  }
+
+  h3 {
+      text-align: center;
+  }
+  
+  p, 
+  li, h4{
+    font-size: 1.2em;
+    top: 0em;
+    padding: 0em;
+    margin: 0em;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+
+  .modalTitle {
+      text-align: center;
+      padding-top: .7em;
+      padding-bottom: .7em;
+  }
+
+  /*.body {
+    background-image: url(/Users/rauljerlach/projects/helloWorld/resources/images/vlumeBackground/vlumeBackground.001.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  */
+  
+  .cities, .flowers, .restaurants, .gifts, .sweets, .balloons {
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; /* 5px rounded corners */
+    margin: 2em;
+    width: 14em;
+    height: 14em;
+    padding: 0em;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,.4);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: .5em .5em;
+    height: 3em;
+    background-color: #ffffff;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+    height: 10em;
+  }
+
+  .prodImg {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  #modalLeft {
+    padding-top: 1.5em;
+    padding-left: 0;
+    margin: 0;
+    width: 45%;
+    height: 55%;
+    float: inline-start;
+  }
+  #modalImage {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #modalRight {
+    padding: 3em;
+    width: 30%;
+    height: 55%;
+  }
+
+  #modalPriceShop {
+    padding: 0em 3em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 10%;
+  }
+
+
+  #modalPricePrice {
+    height: 100%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+    float: left;
+    width: 20%;
+
+  }
+
+  #modalPriceQuant {
+    justify-content: left;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+    width: 60%;
+  }
+
+  #addToC{
+    height: 100%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-right: 2em;
+    float: right;
+  }
+
+
+
+
+  .modal-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90%;
+  }
+  
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 7em auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    vertical-align: auto;
+    height: 30em;
+    border-radius: 2em;
+    box-shadow: 0 24px 48px 0 rgba(0,0,0,.7);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    height: 1em;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+  /* navigation bar section */
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 1em;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%; /* Full width */
+  padding: 0;
+  margin: 0;
+  height: 4em;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a, .topnav img{
+  float: left;
+  color: #747474;
+  text-align: center;
+  padding: .9em 1.4em;
+  text-decoration: none;
+  font-size: 1.45em;
+}
+
+.topnav img {
+  height: 2.3em;
+  padding: 0em;
+  padding-top: .25em;
+  padding-left: .5em;
+  margin: 0em;
+  vertical-align: middle;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(255, 255, 255);
+  color: violet
+}
+
+
+
+
+
+
+.cd-quick-view {
+  display: block;
+  position: fixed;
+  max-width: 900px;
+  
+
+  /* Force Hardware Acceleration in WebKit */
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  will-change: left, top, width;
+  z-index: 1;
+}
