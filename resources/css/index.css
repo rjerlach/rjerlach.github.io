@@ -172,7 +172,7 @@
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     vertical-align: auto;
-    height: 30em;
+    height: 70%;
     border-radius: 2em;
     box-shadow: 0 24px 48px 0 rgba(0,0,0,.7);
   }
