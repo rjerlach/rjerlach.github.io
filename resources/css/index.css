@@ -253,4 +253,47 @@
 
 
 
+/* disenno de el carrito */
+.shoppingRow {
+  height: 10em;
+  background-color: #ffffff;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 1em auto;
+  border-radius: 10em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
 
+.itemImg {
+  height: 7em;
+  object-fit: cover;
+  border-radius: .5em;
+
+}
+
+.itemName, .itemQuant, .itemTotal {
+  display: flex;
+  align-items: center;
+}
+
+.itemNameDiv, .itemQuantDiv, .itemTotalDiv {
+  display: flex;
+  align-items: center;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  height: 80%;
+  width: 20%;
+}
+
+.itemNameDiv {
+  left: 8em;
+}
+
+.itemImgDiv {
+  padding-right: 1.5em;
+  padding-left: 5em;
+  height: 8em;
+  margin: auto 2em;
+}

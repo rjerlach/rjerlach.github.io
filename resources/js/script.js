@@ -127,6 +127,7 @@ function choseCity(id) {
     //}
     assignApi(cityIndex);
     getRequest(currentApi);
+    document.getElementById('c2img').src = 'https://i.imgur.com/4dDS4Sp.png';
     
 }
 
@@ -187,7 +188,10 @@ function createRow(newAdittion) {
     itemImg.src = newAdittion[4];
     itemQuant.innerHTML = newAdittion[3];
     itemTotal.innerHTML = newAdittion[2];
-    itemNameDiv.appendChild(itemName);
+    itemName.className = 'itemName';
+    itemQuant.className = 'itemQuant';
+    itemTotal.className = 'itemTotal';
+    itemImg.className = 'itemImg';
     itemNameDiv.className = "itemNameDiv";
     itemImgDiv.className = 'itemImgDiv';
     itemQuantDiv.className = 'itemQuantDiv';
@@ -195,7 +199,7 @@ function createRow(newAdittion) {
     newRow.className = 'shoppingRow'
     
     
-    
+    itemNameDiv.appendChild(itemName);
     itemImgDiv.appendChild(itemImg);
     itemQuantDiv.appendChild(itemQuant);
     itemTotalDiv.appendChild(itemTotal);
@@ -224,8 +228,6 @@ window.onclick = function(event) {
     html.style.overflow = 'visible';
   }
 }
-
-
 
 
 
