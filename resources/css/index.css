@@ -254,17 +254,3 @@
 
 
 
-.cd-quick-view {
-  display: block;
-  position: fixed;
-  max-width: 900px;
-  
-
-  /* Force Hardware Acceleration in WebKit */
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  will-change: left, top, width;
-  z-index: 1;
-}
