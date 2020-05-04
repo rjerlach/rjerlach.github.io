@@ -256,7 +256,7 @@
 /* disenno de el carrito */
 .shoppingRow {
   height: 10em;
-  background-color: #ffffff;
+  background-color: #ffffffe7;
   width: 90%;
   display: flex;
   align-items: center;
@@ -281,19 +281,30 @@
 .itemNameDiv, .itemQuantDiv, .itemTotalDiv {
   display: flex;
   align-items: center;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-  height: 80%;
-  width: 20%;
+  height: 4em;
+  width: 22%;
+  background-color: #d4d4d4;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  border-radius: 1em;
+  margin: 1.5em;
+}
+
+.itemQuant {
+  margin: auto auto;
 }
 
 .itemNameDiv {
-  left: 8em;
+  left: 3.5em;
+}
+
+.itemTotalDiv {
+  right: 4em;
 }
 
 .itemImgDiv {
   padding-right: 1.5em;
-  padding-left: 5em;
+  padding-left: 2em;
   height: 8em;
   margin: auto 2em;
+  
 }
